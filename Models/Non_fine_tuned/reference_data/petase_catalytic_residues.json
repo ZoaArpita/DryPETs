@@ -1,0 +1,29 @@
+{
+  "enzyme": "IsPETase (Ideonella sakaiensis PETase)",
+  "uniprot": "A0A0K8P6T7",
+  "numbering_convention": "Full-length precursor numbering, including the N-terminal signal peptide. This is the numbering used in PDB 6QGC/5XG0 and consistently throughout the FAST-PETase, ThermoPETase, and HotPETase literature (e.g. S121E, D186H, R280A).",
+  "catalytic_triad": {
+    "positions": [160, 206, 237],
+    "residues": ["Ser160", "Asp206", "His237"],
+    "role": "Canonical Ser-His-Asp hydrolase triad. Ser160 is the covalent nucleophile that attacks the scissile ester bond; His237 deprotonates Ser160 and later the leaving group; Asp206 orients/stabilizes His237.",
+    "mutation_risk": "very_high",
+    "notes": "Mutating any of these three positions is expected to abolish or severely impair catalytic activity in almost all cases. Flag automatically regardless of ESM-2 score.",
+    "source": "Han et al. 2017, Nat Commun 8:2106; Joo et al. 2018, Nat Commun 9:382"
+  },
+  "oxyanion_hole": {
+    "positions": [87, 161],
+    "residues": ["Tyr87", "Met161"],
+    "role": "Backbone NH groups stabilize the negatively charged oxyanion of the tetrahedral reaction intermediate.",
+    "mutation_risk": "high",
+    "notes": "Sits immediately adjacent to the nucleophile (Met161 is Ser160+1). Side-chain identity matters less than backbone geometry, but large substitutions can still disrupt hole geometry.",
+    "source": "Joo et al. 2018, Nat Commun 9:382"
+  },
+  "substrate_binding_notable_residues": {
+    "positions": [159, 185, 280],
+    "residues": ["Trp159", "Trp185", "Arg280"],
+    "role": "Trp159 and Trp185 form aromatic stacking interactions with the PET aromatic rings across subsites I/II of the binding cleft; Arg280 anchors substrate at the far end of subsite IIc.",
+    "mutation_risk": "moderate",
+    "notes": "These are prime substrate-binding-affinity engineering targets rather than purely disruptive positions. Note that R280A is itself part of ThermoPETase/FAST-PETase, so mutation here is not automatically bad -- it needs case-by-case interpretation, unlike the catalytic triad.",
+    "source": "Joo et al. 2018, Nat Commun 9:382; Austin et al. 2018, PNAS"
+  }
+}

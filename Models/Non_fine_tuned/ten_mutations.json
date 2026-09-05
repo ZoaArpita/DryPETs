@@ -1,0 +1,142 @@
+{
+  "wt_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+  "wt_fasta_path": "reference_data/petase_wildtype.fasta",
+  "reference_pdb_path": "reference_data\\petase_structure.pdb",
+  "mutations": [
+    {
+      "mutation": "R280A",
+      "position": 280,
+      "wt_aa": "R",
+      "mut_aa": "A",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTAVSDFRTANCS",
+      "llr": 1.4119324684143066,
+      "composite_score": 6.411932468414307,
+      "flags": [
+        "SUBSTRATE_BINDING_RESIDUE",
+        "MATCHES_PUBLISHED_VARIANT:ThermoPETase,FAST-PETase"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=+1.41. Position IS a reference substrate binding notable residues residue (Arg280, risk=moderate). Exact mutation already validated in: ThermoPETase, FAST-PETase. SASA category: exposed."
+    },
+    {
+      "mutation": "R224S",
+      "position": 224,
+      "wt_aa": "R",
+      "mut_aa": "S",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSSNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": 4.419059574604034,
+      "composite_score": 5.919059574604034,
+      "flags": [
+        "KNOWN_HOTSPOT_POSITION"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=+4.42. Nearest catalytic-site residue is 21.1A away (position 185). Position was mutated (different substitution) in a published thermostable variant. SASA category: exposed."
+    },
+    {
+      "mutation": "R224T",
+      "position": 224,
+      "wt_aa": "R",
+      "mut_aa": "T",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSTNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": 4.055533170700073,
+      "composite_score": 5.555533170700073,
+      "flags": [
+        "KNOWN_HOTSPOT_POSITION"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=+4.06. Nearest catalytic-site residue is 21.1A away (position 185). Position was mutated (different substitution) in a published thermostable variant. SASA category: exposed."
+    },
+    {
+      "mutation": "D186N",
+      "position": 186,
+      "wt_aa": "D",
+      "mut_aa": "N",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWNSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": 3.7675633281469345,
+      "composite_score": 5.2675633281469345,
+      "flags": [
+        "KNOWN_HOTSPOT_POSITION",
+        "NEAR_ACTIVE_SITE(3.7A)"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=+3.77. Nearest catalytic-site residue is 3.7A away (position 185). Position was mutated (different substitution) in a published thermostable variant. SASA category: partially_exposed."
+    },
+    {
+      "mutation": "R224G",
+      "position": 224,
+      "wt_aa": "R",
+      "mut_aa": "G",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSGNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": 3.382612705230713,
+      "composite_score": 4.882612705230713,
+      "flags": [
+        "KNOWN_HOTSPOT_POSITION"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=+3.38. Nearest catalytic-site residue is 21.1A away (position 185). Position was mutated (different substitution) in a published thermostable variant. SASA category: exposed."
+    },
+    {
+      "mutation": "R224A",
+      "position": 224,
+      "wt_aa": "R",
+      "mut_aa": "A",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSANAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": 3.262955904006958,
+      "composite_score": 4.762955904006958,
+      "flags": [
+        "KNOWN_HOTSPOT_POSITION"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=+3.26. Nearest catalytic-site residue is 21.1A away (position 185). Position was mutated (different substitution) in a published thermostable variant. SASA category: exposed."
+    },
+    {
+      "mutation": "D186H",
+      "position": 186,
+      "wt_aa": "D",
+      "mut_aa": "H",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWHSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": -0.44882750511169434,
+      "composite_score": 4.551172494888306,
+      "flags": [
+        "MATCHES_PUBLISHED_VARIANT:ThermoPETase,FAST-PETase",
+        "NEAR_ACTIVE_SITE(3.7A)"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=-0.45. Nearest catalytic-site residue is 3.7A away (position 185). Exact mutation already validated in: ThermoPETase, FAST-PETase. SASA category: partially_exposed."
+    },
+    {
+      "mutation": "R224Q",
+      "position": 224,
+      "wt_aa": "R",
+      "mut_aa": "Q",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSQNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": -0.4774322509765625,
+      "composite_score": 4.5225677490234375,
+      "flags": [
+        "MATCHES_PUBLISHED_VARIANT:FAST-PETase"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=-0.48. Nearest catalytic-site residue is 21.1A away (position 185). Exact mutation already validated in: FAST-PETase. SASA category: exposed."
+    },
+    {
+      "mutation": "N233K",
+      "position": 233,
+      "wt_aa": "N",
+      "mut_aa": "K",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEIKGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+      "llr": -0.948235034942627,
+      "composite_score": 4.051764965057373,
+      "flags": [
+        "MATCHES_PUBLISHED_VARIANT:FAST-PETase",
+        "NEAR_ACTIVE_SITE(5.2A)"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=-0.95. Nearest catalytic-site residue is 5.2A away (position 280). Exact mutation already validated in: FAST-PETase. SASA category: exposed."
+    },
+    {
+      "mutation": "R280G",
+      "position": 280,
+      "wt_aa": "R",
+      "mut_aa": "G",
+      "mutant_sequence": "MNFPRASRLMQAAVLGGLMAVSAAATAQTNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTGVSDFRTANCS",
+      "llr": 1.9722185134887695,
+      "composite_score": 3.4722185134887695,
+      "flags": [
+        "SUBSTRATE_BINDING_RESIDUE",
+        "KNOWN_HOTSPOT_POSITION"
+      ],
+      "rationale": "ESM-2 masked-marginal LLR=+1.97. Position IS a reference substrate binding notable residues residue (Arg280, risk=moderate). Position was mutated (different substitution) in a published thermostable variant. SASA category: exposed."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "numbering_convention": "Full-length IsPETase precursor numbering, matching petase_catalytic_residues.json",
+  "variants": [
+    {
+      "name": "ThermoPETase",
+      "source": "Cui et al. 2021 (referenced in Bell et al. 2022, Chem Catalysis preview)",
+      "mutations": ["S121E", "D186H", "R280A"],
+      "property_improved": "thermostability",
+      "reported_effect": "Tm raised to 56.8C",
+      "verified": true
+    },
+    {
+      "name": "FAST-PETase",
+      "source": "Lu et al. 2022, Nature 604:662-667",
+      "mutations": ["S121E", "D186H", "R224Q", "N233K", "R280A"],
+      "property_improved": "thermostability + catalytic activity on low-crystallinity PET at elevated temperature",
+      "reported_effect": "active/stable across a broad pH and temperature range; degrades untreated post-consumer PET",
+      "verified": true,
+      "notes": "Two mutations (S121E, D186H, R280A partially) inherited from the ThermoPETase scaffold; R224Q and N233K added via ML-guided design. This is the variant sequence provided by the team as a benchmark FASTA."
+    },
+    {
+      "name": "HotPETase",
+      "source": "Bell et al. 2022, Nat Catal 5:673-681",
+      "mutations": null,
+      "num_mutations_reported": 21,
+      "mutation_breakdown": "3 positions inherited from the ThermoPETase starting scaffold + 16 positions installed via directed evolution + 1 rationally introduced disulfide bridge",
+      "property_improved": "thermostability + activity on semi-crystalline PET",
+      "reported_effect": "Tm elevated by ~34C (up to 82.5C); active on PET near/above its glass transition temperature",
+      "verified": false,
+      "notes": "Exact residue-level mutation list was not confirmed from available sources at the time this file was generated. Structure is deposited as PDB 7QVH -- pull the full mutation list from the paper's supplementary tables or by sequence-diffing 7QVH against wild-type IsPETase before relying on this variant for hotspot scoring."
+    }
+  ],
+  "hotspot_positions_verified": [121, 186, 224, 233, 280],
+  "_comment": "hotspot_positions_verified is the flat, deduplicated position list the annotator uses for overlap scoring. Only includes positions from variants with verified=true. Update this list (and re-derive it) once HotPETase's full mutation set is added above."
+}

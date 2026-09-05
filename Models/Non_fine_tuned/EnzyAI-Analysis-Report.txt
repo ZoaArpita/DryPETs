@@ -1,0 +1,9 @@
+EnzyAI - AI-Guided Directed Evolution Platform
+SIH Problem: 1492
+Team ID: 103
+
+Enzyme: No sequence analyzed
+Mutations: Pending
+Validation: Pending
+
+This report is a frontend placeholder.
