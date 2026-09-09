@@ -600,12 +600,8 @@ during development.
 # Fixed local path ten_mutations.json is written to by
 # biology_annotator.py (run with --fasta). If it's there, load it
 # automatically — no manual upload needed.
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_TEN_MUTATIONS_PATH = BASE_DIR / "Models" / "Non_fine_tuned" / "ten_mutations.json"
-st.write("BASE_DIR:", BASE_DIR)
-st.write("Looking for:", DEFAULT_TEN_MUTATIONS_PATH)
-st.write("Exists?", DEFAULT_TEN_MUTATIONS_PATH.exists())
-st.write("Contents of BASE_DIR:", list(BASE_DIR.iterdir()))
 st.sidebar.header("Load top candidate")
 
 ten_mutations_data = None
