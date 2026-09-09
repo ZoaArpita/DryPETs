@@ -600,10 +600,8 @@ during development.
 # Fixed local path ten_mutations.json is written to by
 # biology_annotator.py (run with --fasta). If it's there, load it
 # automatically — no manual upload needed.
-DEFAULT_TEN_MUTATIONS_PATH = Path(
-    r"C:\Users\ASUS\PycharmProjects\plastic_degrading_enzyme_mutator"
-    r"\Models\Non_fine_tuned\ten_mutations.json"
-)
+BASE_DIR = Path(__file__).resolve().parent
+DEFAULT_TEN_MUTATIONS_PATH = BASE_DIR / "Models" / "Non_fine_tuned" / "ten_mutations.json"
 
 st.sidebar.header("Load top candidate")
 
