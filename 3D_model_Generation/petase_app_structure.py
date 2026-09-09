@@ -601,7 +601,8 @@ during development.
 # biology_annotator.py (run with --fasta). If it's there, load it
 # automatically — no manual upload needed.
 BASE_DIR = Path(__file__).resolve().parent.parent
-DEFAULT_TEN_MUTATIONS_PATH = BASE_DIR / "Models" / "Non_fine_tuned" / "ten_mutations.json"
+NON_FINE_TUNED_DIR = BASE_DIR / "Models" / "Non_fine_tuned"
+DEFAULT_TEN_MUTATIONS_PATH = NON_FINE_TUNED_DIR / "ten_mutations.json"
 st.sidebar.header("Load top candidate")
 
 ten_mutations_data = None
@@ -669,12 +670,16 @@ if ten_mutations_data and ten_mutations_data.get("mutations"):
         st.session_state["wt_seq_input"] = wt_sequence
         st.session_state["mutant_seq_input"] = mutant_sequence
 
-        reference_pdb_path = ten_mutations_data.get("reference_pdb_path")
+        reference_pdb_path_raw = ten_mutations_data.get("reference_pdb_path")
         wt_pdb_text = None
 
-        if reference_pdb_path and Path(reference_pdb_path).exists():
+        if reference_pdb_path_raw:
+            normalized = reference_pdb_path_raw.replace("\\", "/")
+            reference_pdb_path = NON_FINE_TUNED_DIR / normalized
+
+            if reference_pdb_path.exists():
             # Reuse the reference WT structure instead of re-folding it.
-            wt_pdb_text = Path(reference_pdb_path).read_text()
+            wt_pdb_text = reference_pdb_path.read_text()
 
         try:
             if wt_pdb_text is None:
