@@ -679,7 +679,7 @@ if ten_mutations_data and ten_mutations_data.get("mutations"):
 
             if reference_pdb_path.exists():
             # Reuse the reference WT structure instead of re-folding it.
-            wt_pdb_text = reference_pdb_path.read_text()
+                wt_pdb_text = reference_pdb_path.read_text()
 
         try:
             if wt_pdb_text is None:
